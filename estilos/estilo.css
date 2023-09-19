@@ -9,49 +9,43 @@ body{
 a{
     text-decoration: none;
 }
-.header{
+header{
     display:flex;
     width: auto;
-    height: 82px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 100px;
-    flex-wrap: wrap;    
+    justify-content: center; 
     background: #2B2D42;
 }
-.botones{
+.menu{
+    list-style: none;
     display: flex;
-    padding: 10px;
-    height: 10px;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+}
+.botones{
+    font-family: Kadwa;
+    font-size: 20px;
+    font-style: normal;
+    margin-right: 40px;
+    padding: 5px;
     border-radius: 20px;
     background: #BB0B29;
 }
-.botones a{
+.menu a{
     color: #FFF;
-    text-align: center;
-    font-family: Kadwa;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px;
+    text-decoration: none;
 }
 .botones:hover{
     background: #EF233C;
 }
-footer{
+.footer-contenido{
     display: flex;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 48px;
     justify-content: space-between;
     align-items: center;
     background: #8D99AE;
 }
-.perfil{
+.datos-imagen{
     border-radius:50%;
     max-width: 30%;
     height: auto;
@@ -85,7 +79,6 @@ footer{
 }
 .redes2{
     display: flex;
-    justify-content: center;
     gap: 50px;
 }
 .redes2 a{
@@ -104,4 +97,56 @@ footer{
     gap: 200px;
     justify-content: center;
     display: flex;
+}
+@media screen and (max-width: 1000px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .botones {
+        text-align: center;
+        margin: 8px 0;
+    }
+    .datos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .datos-imagen {
+        margin-bottom: 10px;
+    }
+
+    .texto {
+        width: 100%;
+        text-align: justify;
+    }
+
+    footer {
+        text-align: center;
+    }
+    .footer-contenido{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .copy {
+        flex: 1;
+        text-align: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .redes {
+        flex: 1;
+        text-align: right; 
+    }
+    
+    .redes a {
+        text-decoration: none;
+        color: #000;
+        margin-right: 10px;
+    }
 }
