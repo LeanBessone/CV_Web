@@ -154,6 +154,6 @@ header {
   .juntar {
     flex-direction: column;
     padding: 0;
-    gap: 40px;
+    gap: 20px;
   }
 }
